@@ -59,12 +59,12 @@ az account show
 # AZ CLI is installed
 # When deploying the script with Powershell you need to enter the following command in order to be able to run the script: 'Set-ExecutionPolicy -Scope Process -ExecutionPolicy  ByPass'
 # When the script has run, then go to the portal and check inside your resource group, that the deployment has been successful.
-$resourceGroup = 'rg_ramtin'
-$storageAccountName = 'ramtinstorageacc'
-$appServicePlanName = 'ramtinAppServicePlan'
-$functionappName = 'ramtinFuncApp111'
-$webappName = 'ramtinWebApp111'
-$cosmosNamespace = 'ramtincosmosnamespace'
+$resourceGroup = 'rg_simonandersen'
+$storageAccountName = 'simonstorageacc'
+$appServicePlanName = 'simonAppServicePlan'
+$functionappName = 'simonFuncApp111'
+$webappName = 'simonWebApp111'
+$cosmosNamespace = 'simoncosmosnamespace'
 
 # If you don't have the latest az cli, then az functionapp step might fail.
 # If so, then please remove the # from the next line.
