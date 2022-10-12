@@ -1,0 +1,22 @@
+on:
+  workflow_run:
+    workflows: [stagesDemo]
+    types:
+      - completed
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build2:
+    # Which image should my job run on? 
+    # Could also be Windows 2019 (windows-2019) or macOS Monterey 12 (macos-12)
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo This is my first stage!
